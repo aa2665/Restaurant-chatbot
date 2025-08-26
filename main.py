@@ -1,5 +1,3 @@
-# Author: Dhaval Patel. Codebasics YouTube Channel
-
 from fastapi import FastAPI
 from fastapi import Request
 from fastapi.responses import JSONResponse
@@ -143,4 +141,5 @@ def track_order(parameters: dict, session_id: str):
 
     return JSONResponse(content={
         "fulfillmentText": fulfillment_text
+
     })
